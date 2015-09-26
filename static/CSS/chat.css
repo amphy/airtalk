@@ -20,19 +20,23 @@ body{
 }
 
 #chatRoom{
-	margin-left: 20%;
-	margin-right: 80%;
-	width: 60%;
+	margin: 0px auto;
+	margin-top: 4%;
+	width: 550px;
 	height: 70%;
-	border-style: solid;
-    border-width: 1px;
+	background: rgba(0,0,0,0.1);
 }
 
 #chatRoom #message{
-	width: 100%;
-	height: 8%;
-	border-style: solid;
-    border-width: 1px;
+	position: relative;
+	margin-left: 2%;
+	margin-right: 2%;
+	top: 2%;
+	
+	background: rgba(0,0,0,0.2);
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
 }
 
 #chatRoom #message #passengerMessageText{
@@ -43,8 +47,8 @@ body{
 	color: white;
 	font-family: verdana;
 	font-size: 125%;
-	margin-top: 1%;
-	margin-bottom: 1%;
+	margin-top: 3%;
+	font-size: 100%;
 }
 
 #passengerMessageDiv{
