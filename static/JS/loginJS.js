@@ -10,14 +10,15 @@ function verify(){
 	}
 	
 	$.ajax({
+
 		url: '/_confirm',
 		type: 'POST',
 		data: {email:$("#flightInputId").val(), flightId:$("#emailInputId").val()},
 		success: function(data){
-			alert(data.toString())
+			
 		},
 		error: function(error){
-			alert(error.toString());
+			
 		}
 	});
 }

@@ -32,8 +32,10 @@ body{
 
 img{
 	position: absolute;
-	 height: "50%";
-	 width: "20%";
+	height: 20%;
+	width: 20%;
+  margin-top: 20px;
+  margin-left: 40%;
 }
 
 #loginTable p{
@@ -46,7 +48,7 @@ img{
 	border: 0px;
 	border-bottom: 1px solid black;
 	background-color: transparent;
-	width: 250px;
+	width: 3em;
 	font-family: verdana;
 	font-size: 125%;
 }
