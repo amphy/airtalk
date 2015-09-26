@@ -18,7 +18,7 @@ def hello3():
 
 @app.route("/login/confirm", methods = ['POST'])
 def checkEmailFlightId(email, flightId):
-	return jsonify(True)
+	return True
 
 if __name__ == "__main__":
     app.run()
