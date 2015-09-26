@@ -8,11 +8,11 @@ app = Flask(__name__)
 def hello1():
     return render_template("index.html")
 
-@app.route("/login")
+@app.route("/login/")
 def hello2():
     return render_template("login.html")
     
-@app.route("/chat")
+@app.route("/chat/")
 def hello3():
     return render_template("chat.html")
 
