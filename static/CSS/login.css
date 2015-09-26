@@ -30,6 +30,12 @@ body{
 	margin: 0px auto;
 }
 
+img{
+	position: absolute;
+	 height: "50%";
+	 width: "20%";
+}
+
 #loginTable p{
 	font-family: verdana;
 	font-size: 125%;
