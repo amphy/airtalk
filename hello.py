@@ -16,9 +16,9 @@ def hello2():
 def hello3():
     return render_template("chat.html")
 
-@app.route("/login/confirm", methods = ['POST'])
+@app.route("/login/confirm/", methods = ['POST'])
 def checkEmailFlightId(email, flightId):
-	return True
+    return True
 
 if __name__ == "__main__":
     app.run()
