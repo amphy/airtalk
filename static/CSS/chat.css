@@ -3,6 +3,9 @@ html{
 }
 
 body{
+	background: url("http://oxbowtie.neocities.org/images/banner.jpg") no-repeat center center fixed; 
+	background-size: cover;
+
 	width: 100%;
 	height: 100%;
 	padding: 0px;
@@ -19,7 +22,7 @@ body{
 #chatRoom{
 	margin-left: 30%;
 	margin-right: 70%;
-	width: 40%;
+	width: 60%;
 	height: 70%;
 	border-style: solid;
     border-width: 1px;
@@ -27,13 +30,21 @@ body{
 
 #chatRoom #message{
 	width: 100%;
-	height: 7%;
+	height: 8%;
 	border-style: solid;
     border-width: 1px;
 }
 
 #chatRoom #message #passengerMessageText{
 	margin-left: 2%;
+}
+
+#chatRoom #message p{
+	color: white;
+	font-family: verdana;
+	font-size: 125%;
+	margin-top: 1%;
+	margin-bottom: 1%;
 }
 
 #passengerMessageDiv{
