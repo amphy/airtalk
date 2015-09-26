@@ -24,7 +24,7 @@ body{
 .myButton {
 	margin-left: 46%;
 	margin-right: 54%;
-	margin-top: 15%;
+	margin-top: 5%;
 	background-color:white;
 	-moz-border-radius:28px;
 	-webkit-border-radius:28px;
@@ -32,6 +32,7 @@ body{
 	border:1px solid white;
 	cursor:pointer;
 	color: gray;
+	display: inline-block;
 	font-family:Arial;
 	font-size:20px;
 	padding:16px 31px;
