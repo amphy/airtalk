@@ -15,7 +15,12 @@ body{
 
 #loginTable{
 	margin: 0px auto;
-	margin-top: 15%;
+	margin-top: 15%;'
+	
+	border: 1px solid white;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
 }
 
 #loginTable p{
@@ -29,14 +34,17 @@ body{
 	border-bottom: 1px solid black;
 	background-color: transparent;
 	width: 250px;
+	font-family: verdana;
+	font-size: 125%;
 }
 
 #emailInputId{
 	border: 0px;
 	border-bottom: 1px solid black;
 	background-color: transparent;
-	text-align: right;
 	width: 250px;
+	font-family: verdana;
+	font-size: 125%;
 }
 
 .myButton {
