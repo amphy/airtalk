@@ -11,7 +11,7 @@ function verify(){
 	
 	$.ajax({
 		url: 'confirm',
-		type: 'GET',
+		type: 'POST',
 		success: function(data){
 			alert(data.toString())
 		},
