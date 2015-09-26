@@ -2,6 +2,7 @@ from flask import Flask
 from flask import render_template
 from flask import url_for
 from flask import request
+from flask import jsonify
 app = Flask(__name__)
 
 @app.route("/")
@@ -19,7 +20,8 @@ def hello3():
 @app.route("/_confirm", methods = ['POST'])
 def checkEmailFlightId(email, flightId):
 	print "lol"
-	return True
+    return jsonify({"hi": "bye"})
 
 if __name__ == "__main__":
+    print "hello"
     app.run()
