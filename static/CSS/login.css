@@ -1,5 +1,5 @@
 body{
-	background: url("http://kahaf.com/wp-content/uploads/2014/07/green-and-orange-gradient-9814.jpg") no-repeat center center fixed; 
+	background: linear-gradient(rgba(211,211,211,0.45),rgba(211,211,211,0.45)), url("http://kahaf.com/wp-content/uploads/2014/07/green-and-orange-gradient-9814.jpg") no-repeat center center fixed; 
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -13,14 +13,21 @@ body{
 	opacity: .4;
 }
 
-#loginTable{
+#tableDiv{
+	width: 25%;
 	margin: 0px auto;
-	margin-top: 15%;'
+	margin-top: 15%;
 	
-	border: 1px solid white;
+	padding: 15px;
+	
+	border: 2px solid white;
 	-moz-border-radius:28px;
 	-webkit-border-radius:28px;
-	border-radius:28px;
+	border-radius: 28px;
+}
+
+#loginTable{
+	margin: 0px auto;
 }
 
 #loginTable p{
@@ -49,7 +56,7 @@ body{
 
 .myButton {
 	margin-left: 46%;
-	margin-top: 5%;
+	margin-top: 8%;
 	background-color: white;
 	-moz-border-radius:28px;
 	-webkit-border-radius:28px;
