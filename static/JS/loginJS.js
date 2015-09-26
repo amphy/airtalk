@@ -10,13 +10,13 @@ function verify(){
 	}
 	
 	$.ajax({
-		url: dfsdd,
+		url: '/whatever',
 		type: 'GET',
 		success: function(data){
-			alert(data)
+			alert(data.toString())
 		},
 		error: function(error){
-			alert(error);
+			alert(error.toString());
 		}
 	});
 }
