@@ -10,7 +10,7 @@ function verify(){
 	}
 	
 	$.ajax({
-		url: '/confirm',
+		url: 'confirm',
 		type: 'GET',
 		success: function(data){
 			alert(data.toString())
