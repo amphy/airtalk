@@ -18,6 +18,7 @@ def hello3():
 
 @app.route("/login/confirm", methods = ['POST'])
 def checkEmailFlightId(email, flightId):
+	print "lol"
 	return True
 
 if __name__ == "__main__":
