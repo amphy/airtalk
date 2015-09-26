@@ -18,9 +18,9 @@ def hello3():
     return render_template("chat.html")
 
 @app.route("/_confirm", methods = ['POST'])
-def checkEmailFlightId(email, flightId):
-	print "lol"
-    return jsonify({"hi": "bye"})
+def checkEmailFlightId():
+    print request.form["email"]
+    return "True"#jsonify({"hi": "bye"})
 
 if __name__ == "__main__":
     print "hello"
