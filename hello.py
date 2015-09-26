@@ -16,5 +16,9 @@ def hello():
 def hello():
     return render_template("chat.html")
 
+@app.route("/login/whatever", methods = ['POST'])
+def checkEmailFlightId(email, flightId):
+	return jsonify(True)
+
 if __name__ == "__main__":
     app.run()

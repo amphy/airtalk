@@ -74,4 +74,4 @@ Thumbs.db
 # Other files to ignore #
 #########################
 *.ini
-
+database.py
