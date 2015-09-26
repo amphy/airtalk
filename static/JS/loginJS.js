@@ -10,7 +10,7 @@ function verify(){
 	}
 	
 	$.ajax({
-		url: 'confirm',
+		url: '/airtalk/_confirm',
 		type: 'POST',
 		success: function(data){
 			alert(data.toString())
