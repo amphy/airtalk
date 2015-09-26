@@ -12,7 +12,7 @@ def hello1():
 def hello2():
     return render_template("login.html")
     
-@app.route("/chat/")
+@app.route("/chat/", methods = ['POST'])
 def hello3():
     return render_template("chat.html")
 
