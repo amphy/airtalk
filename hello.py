@@ -40,15 +40,16 @@ def checkEmailFlightId():
 	email = request.form["email"]
 	flightId = request.form["flightId"]
 	database = MySQLdb.connect(host, user, password, db)
-	database.query("""SELECT * FROM flightdata""")
+	database.query("SELECT * FROM flightdata")
 	r = database.store_result()
 	numRows = r.num_rows()
+	result = "False"
 	for i in range(0, numRows):
-		currEmail = r.fetch_row()[0][0]
-		currFlightId = r.fetch_row()[0][1]
+		currEmail, currFlightId = r.fetch_row()[0][0:2]
 		if email == currEmail and flightId == currFlightId:
-			return "True"
-	return "False"
+			result = "True"
+	print result
+	return result
 
 if __name__ == "__main__":
     app.run()
