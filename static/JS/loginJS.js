@@ -11,7 +11,7 @@ function verify(){
 	
 	$.ajax({
 
-		url: '/_confirm',
+		url: '/airtalk/_confirm',
 		type: 'POST',
 		data: {email:$("#flightInputId").val(), flightId:$("#emailInputId").val()},
 		success: function(data){

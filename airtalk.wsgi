@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 import os
-# os.environ['PYTHON_EGG_CACHE'] = '/var/www/LeagueAPIChallenge/python-eggs' 
+os.environ['PYTHON_EGG_CACHE'] = '/var/www/airtalk/python-eggs' 
 
 activate_this = '/var/www/airtalk/venv/bin/activate_this.py'
 execfile(activate_this, dict(__file__=activate_this))
