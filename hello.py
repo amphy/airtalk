@@ -16,7 +16,7 @@ host = None
 socketio = SocketIO(app)
 
 try:
-    parser.read("config.ini")
+    parser.read("/var/www/airtalk/config.ini")
     user = parser.get('database', 'username')
     password = parser.get('database', 'password')
     db = parser.get('database', 'name')
