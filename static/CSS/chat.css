@@ -45,9 +45,10 @@ body{
 
 #chatRoom #message p{
 	color: white;
+/*	position: relative;*/
 	font-family: verdana;
 	font-size: 125%;
-	margin-top: 3%;
+	margin-top: 20%;
 	font-size: 100%;
 }
 
