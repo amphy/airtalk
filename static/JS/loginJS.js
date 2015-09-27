@@ -2,6 +2,8 @@ function init(){
 		$("#button").click(function(){
 			verify();
 		});
+		
+		
 }
 
 function verify(){
