@@ -1,5 +1,5 @@
 function init(){
-	var socket = io.connect('23.94.96.224');
+	var socket = io.connect('23.94.96.224:80');
 	
 	socket.on("update", function(msg){
 		if (ready){
