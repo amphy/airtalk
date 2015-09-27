@@ -3,6 +3,7 @@ from flask import render_template
 from flask import url_for
 from flask import request
 from flask import jsonify
+from flask.ext.socketio import SocketIO
 from ConfigParser import SafeConfigParser
 import MySQLdb
 
@@ -12,6 +13,7 @@ user = None
 password = None
 db = None
 host = None
+socketio = SocketIO(app)
 
 try:
     parser.read("config.ini")
@@ -51,5 +53,20 @@ def checkEmailFlightId():
 	print result
 	return result
 
+@socketio.on('client send chat')
+def handleClientSentMessage(json):
+    print('received json: ' + str(json))
+
+"""
+@socketio.on('client receive chat')
+def handleClientReceiveMessage(json):
+    emit('my response', json)
+"""
+
+@socketio.on('all clients receive chat')
+def handleAllClientsReceiveMessage(data):
+    emit('my response', data, broadcast=True)
+    
 if __name__ == "__main__":
-    app.run()
+    #app.run()
+    socketio.run(app)
