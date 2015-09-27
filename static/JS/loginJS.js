@@ -6,7 +6,7 @@ function init(){
 
 function verify(){
 	if ($("#flightInputId").val() == "" || $("#emailInputId").val() == ""){
-		alert("Not all fields filled out");
+		alert("Not all Fields are Filled out");
 	}
 	
 	$.ajax({
